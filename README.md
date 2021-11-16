@@ -1,11 +1,21 @@
 # Profile-Team-Meeting-Generator-App
 This app will help you to make a Team Profile Generator and  will create a website that will display your team member's profiles.
 
-# links
+## Screenshot for the application
+<img src ="Assets\video\Screenshot (3).png" width="580" height="280">
 
-Github URL:
-Deployed URL:
+# Watch This Video  Tutorial
+<img src ="Assets\video\Screenshot (2).png" width="580" height="280">
+
+[![Watch the video]]()
+
+
+## links
+
 video link:
+
+Github URL:https://github.com/oliversh99/Profile-Team-Meeting-Generator-App
+
 # User Story
 
 AS A manager

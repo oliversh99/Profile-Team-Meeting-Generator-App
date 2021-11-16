@@ -147,7 +147,94 @@ inquirer
       return employee.map(employee => {
            if (employee.getRole()==='Manager'){
             return `
-            <div class="card" style="width: 18rem;">
+            <div class="col-2">
+        <div class="row card">
+            <div class="col-12"><h3>${employee.name}</h3></div>
+            <div class="col-12"><h4><i class="fas fa-mug-hot"></i> ${employee.getRole()}</h4></div>
+        </div>
+        <div class="row info">
+            <div class="col-12">
+            <p>ID: ${employee.id}</p>
+            <p>Email: <a href="mailto: ${employee.email}">${employee.email}</a></p>
+            <p>School: ${employee.officeNumber}</p>
+            </div>
+        </div>
+     </div>`
+           }else if (employee.getRole()==='Intern' ){
+               return`
+               <div class="col-2">
+        <div class="row card">
+            <div class="col-12"><h3>${employee.name}</h3></div>
+            <div class="col-12"><h4><i class="fas fa-user-graduate"></i> ${employee.getRole()}</h4></div>
+        </div>
+        <div class="row info">
+            <div class="col-12">
+            <p>ID: ${employee.id}</p>
+            <p>Email: <a href="mailto: ${employee.email}">${employee.email}</a></p>
+            <p>School: ${employee.school}</p>
+            </div>
+        </div>
+     </div>`
+           }else if (employee.getRole()==='Engineer' ){
+               return `<div class="col-2">
+               <div class="row card">
+                   <div class="col-12"><h3>${employee.name}</h3></div>
+                   <div class="col-12"><h4><i class="fas fa-glasses"></i> ${employee.getRole()}</h4></div>
+               </div>
+               <div class="row info">
+                   <div class="col-12">
+                   <p>ID: ${employee.id}</p>
+                   <p>Email: <a href="mailto: ${employee.email}">${employee.email}</a></p>
+                   <p>School: ${employee.githup}</p>
+                   </div>
+               </div>
+            </div>`
+           }
+        })
+ 
+{/*<div class="col-2">
+        <div class="row card">
+            <div class="col-12"><h3>${employee.name}</h3></div>
+            <div class="col-12"><h4><i class="fas fa-user-graduate"></i> ${employee.getRole()}</h4></div>
+        </div>
+        <div class="row info">
+            <div class="col-12">
+            <p>ID: ${employee.id}</p>
+            <p>Email: <a href="mailto: ${employee.email}">${employee.email}</a></p>
+            <p>School: ${employee.officeNumber}</p>
+            </div>
+        </div>
+     </div>
+    
+    <div class="col-2">
+        <div class="row card">
+            <div class="col-12"><h3>${employee.name}</h3></div>
+            <div class="col-12"><h4><i class="fas fa-user-graduate"></i> ${employee.getRole()}</h4></div>
+        </div>
+        <div class="row info">
+            <div class="col-12">
+            <p>ID: ${employee.id}</p>
+            <p>Email: <a href="mailto: ${employee.email}">${employee.email}</a></p>
+            <p>School: ${employee.school}</p>
+            </div>
+        </div>
+     </div>
+    
+    <div class="col-2">
+        <div class="row card">
+            <div class="col-12"><h3>${employee.name}</h3></div>
+            <div class="col-12"><h4><i class="fas fa-user-graduate"></i> ${employee.getRole()}</h4></div>
+        </div>
+        <div class="row info">
+            <div class="col-12">
+            <p>ID: ${employee.id}</p>
+            <p>Email: <a href="mailto: ${employee.email}">${employee.email}</a></p>
+            <p>School: ${employee.githup}</p>
+            </div>
+        </div>
+     </div>
+
+ <div class="card" style="width: 18rem;">
             <div class ="card-body p-3 mb-2 bg-primary text-white text-center"> <h1 class="card-title">${employee.name}</h1>
             <p class="card-text">${employee.getRole()} </p></div>
             <ul class="list-group list-group-flush">
@@ -155,10 +242,10 @@ inquirer
             <li class="list-group-item"> Email:${employee.email} </li>
             <li class="list-group-item"> Office Number:${employee.officeNumber} </li>
             </ul>
-            </div>`
-           }else if (employee.getRole()==='Intern' ){
-               return`
-               <div class="card" style="width: 18rem;">
+            </div>
+
+
+<div class="card" style="width: 18rem;">
                <div class ="card-header p-3 mb-2 bg-primary text-white text-center"><h1 class="card-title"> ${employee.name}</h1>
                <p>${employee.getRole()} </p></div>
                <ul class="list-group list-group-flush">
@@ -166,9 +253,11 @@ inquirer
                <li class="list-group-item"> Email:${employee.email} </li>
                <li class="list-group-item"> School:${employee.school} </li>
                </ul>
-               </div>`
-           }else {
-               return `<div class="card" style="width: 18rem;">
+               </div>
+
+
+     <div class="col-2">
+               <div class="row card">
                <div class ="card-body p-3 mb-2 bg-primary text-white text-center"><h1 class="card-title"> ${employee.name}</h1>
                <p>${employee.getRole()} </p></div>
                <ul class="list-group list-group-flush">
@@ -176,9 +265,8 @@ inquirer
                <li class="list-group-item"> Email:${employee.email} </li>
                <li class="list-group-item"> GitHub:${employee.githup} </li>
                </ul>
-               </div>`
-           }
-        })
+               </div>
+ */}
 
     };
     function createHtmlPage() {
@@ -191,31 +279,22 @@ inquirer
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Document</title>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-            <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-           
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
+           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> 
+           <link rel="stylesheet" href="./dist/style.css">
 
         </head>
         <body>
-        <div>
-        <header class="bg-primary"><h2 class ="text-center">My Team</h2></header>
-        </div>
-        <div class='container'>
-        <div class='row align-items-center'>
-        <div class="col-4 d-flex flex-row justify-content-center">
-      
-       
-                     
-         ${makeEmployeeCard()}
-         
-         
-         </div>
-                      
-        </div>
-    </div>
-       
+     
+        <header>My Team</header>
+        <main class="container">
+            <div class="row d-flex justify-content-center">
+            ${makeEmployeeCard()}
+            </div>
+            </main>
 
         </body>
        

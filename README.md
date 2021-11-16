@@ -4,27 +4,25 @@ This app will help you to make a Team Profile Generator and  will create a websi
 ## Screenshot for the application
 <img src ="Assets\video\Screenshot (3).png" width="580" height="280">
 
-# Watch This Video  Tutorial
+### Watch This Video  Tutorial
 <img src ="Assets\video\Screenshot (2).png" width="580" height="280">
 
-[![Watch the video]]()
+[![Watch the video]](https://drive.google.com/file/d/1RrKIAdu1mUXfk3LqGEt4FTlJG6h3ntCi/view?usp=sharing)
 
 
-## links
+## links:
 
-video link:
+video link:https://drive.google.com/file/d/1RrKIAdu1mUXfk3LqGEt4FTlJG6h3ntCi/view?usp=sharing
 
 Github URL:https://github.com/oliversh99/Profile-Team-Meeting-Generator-App
 
-# User Story
+## User Story:
 
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
 SO THAT I have quick access to their emails and GitHub profiles
 
-# Video Tutorial
-
-# Acceptance Criteria
+## Acceptance Criteria:
 This is all acceptance criteria that can found in this app
 
 GIVEN a command-line application that accepts user input
@@ -45,11 +43,11 @@ THEN I am prompted to enter the intern’s name, ID, email, and school, and I am
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
-# Usage
+## Usage:
 to use this Just run node inex.js and answer prompt qustions
 
-# License
+## License:
 This project is convered under the MIT License.
 
-# Questions
+## Questions:
 For questions about this project, please reach out by email at olivcode999@gmail.com
